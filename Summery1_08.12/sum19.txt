@@ -1,0 +1,184 @@
+// number
+// string
+// boolean
+// null
+// undefined
+// object
+
+// let num = 165;
+
+// let str = "hello JS";
+
+// let isAdmin = true;
+
+// let name = null;
+
+// let lastName = undefined;
+
+// let userData = {
+//   name: "Alice",
+//   age: 5454,
+//   friends: [4, 5, 6, "Mike"],
+//   address: {
+//       city: "Berlin",
+//       country: "USA"
+//   }
+// }
+
+// console.log(userData.address.country);
+
+// let name = "Alice"
+// let age = 65;
+// let isAdmin = true;
+
+// let data = {
+//    name: "Alice",
+//    age: 65,
+//    isAdmin: true
+// }
+
+
+// let userData = {
+//   name: "Alice",
+//   age: 54,
+// }
+
+// let userData2 = userData;
+
+// let userData3 = userData2;
+
+// userData.age = 25;
+
+
+// console.log(userData);
+// console.log(userData2);
+// console.log(userData3);
+
+
+
+
+
+
+
+// console.log(userData["name of user"]);
+// console.log(userData.age);
+
+
+// if(){} / loops / functions / str + str
+
+// for(let i = 0; i < 10; i++){
+//   console.log("Hello" + i);
+// }
+
+// let name = "Alice"
+
+// for(let i = 0; i < name.length; i++){
+//   console.log(name[i]);
+// }
+
+// let arr = [78, 0, -56, 99, -12, 44, -54]
+
+// for(let i = 0; i < arr.length; i++) {
+//    if(arr[i] >= 0) {
+//         console.log(arr[i]);
+//    }
+// }
+
+
+
+
+// for(let i = 1; i <= 10; i++) {
+  
+  
+//   for(let j = 1; j <= 10; j++){
+//     console.log(`${i} * ${j} = ${i * j}`);
+//   }
+  
+  
+//   console.log('===============================');
+  
+  
+// }
+
+let i = 0
+
+// while(false) {
+//   console.log(i);
+//   i++;
+// }
+
+
+// do {
+//     console.log(i);
+//     i++;
+// } while(false)
+
+
+
+
+
+
+// let i = 0;
+
+// for(; i < 10 ; ) {
+//   console.log(i);
+//   i++;
+// }
+
+// let str = 'hello';
+// str[0] = "A"
+// console.log(str);
+
+
+// let arr = [1, 2 ,3];
+// arr[1] = 999;
+// console.log(arr);
+
+
+
+
+// p
+
+// let
+// const 
+
+// n/p
+
+// const arr = [1, 2, 3]
+
+// const userData = {
+//   name: "Alice",
+//   age: 45
+// }
+
+// userData.age = 15;
+
+// console.log(userData);
+
+
+//  function
+
+// let a = 1;
+// let b = 2;
+// let sum = a + b;
+
+// let d = 10;
+// let v = 29;
+// let sum2 = d + v;
+
+// function sum(num1, num2) {
+//   return num1 + num2;
+// }
+
+// const result = sum(1, 2);
+
+// console.log(result);
+
+
+
+
+
+
+
+
+

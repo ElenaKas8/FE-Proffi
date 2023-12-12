@@ -1,0 +1,79 @@
+.box>p {
+    color: red;
+}
+
+.box>p,
+.box>div {
+    color: red;
+}
+
+a {
+    color: red;
+}
+
+a[href=""] {
+    color: red;
+}
+
+a[href="#"] {
+    color: red;
+}
+
+a:visited {
+    color: yellow;
+}
+
+a:focus {
+    color: green;
+}
+
+a:hover {
+    color: black;
+}
+
+a:active {
+    color: red;
+}
+
+p::first-letter {
+    color: red;
+}
+
+p::first-line {
+    color: red;
+}
+
+p::before {
+    content: "...";
+    display: block;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+}
+
+div {
+    width: 300px;
+    height: 300px;
+    color: red;
+}
+
+/* Десятиричная система счисления */
+/* 0, */
+/* 1, */
+/* 2, */
+/* 3, */
+/* 4, */
+/* 5, */
+/* 6, */
+/* 7, */
+/* 8, */
+/* 9, */
+/* a, */
+/* -10 b, */
+/* -11 c, */
+/* -12 d, */
+/* -13, */
+/* /* /* -14 e::-ms-expand 7856=6+50+800+7000=6*10^3+5*10^2+8*10^1+7*10^0=7856 */
