@@ -25,6 +25,16 @@
 
 //const result = console.log('hello')
 
+//Приволит Boolean k Folse
+/*
+  0
+  undefined
+  ""
+  NaN
+  null
+  false
+*/
+
 
 
 
