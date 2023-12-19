@@ -12,12 +12,12 @@
 
 // stringSqrt(() => 2 * 2)
 
-function stringSqrt(callback) {
-  if (callback() % 2 === 0) {
-    console.log("Результат четный");
-  } else {
-    console.log("Результат не четный");
-  }
-}
+// function stringSqrt(callback) {
+//   if (callback() % 2 === 0) {
+//     console.log("Результат четный");
+//   } else {
+//     console.log("Результат не четный");
+//   }
+// }
 
-stringSqrt(() => 2 * 2);
+// stringSqrt(() => 2 * 2);
