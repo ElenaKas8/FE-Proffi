@@ -21,3 +21,41 @@ tbody tr:nth-child(odd){
 td,th{
     padding: 10px;
 }
+
+.container {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    display: flex;
+  }
+  
+  .box {
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+    border: 1px solid black;
+  }
+
+  div {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+  }
+  
+  div::before {
+    content: "box1";
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+    border: 1px solid black;
+    display: flex;
+  }
+  
+  div::after {
+    content: "box2";
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+    border: 1px solid black;
+    display: flex;
+  }
