@@ -65,7 +65,8 @@
 
 //----
 //   indexOf-поиск индекса элемента
-let array = [10,20,30,40,50];
-console.log(array.indexOf(30));
-console.log(array.indexOf(50));
-console.log(array.indexOf(100));
+// let array = [10,20,30,40,50];
+// console.log(array.indexOf(30));
+// console.log(array.indexOf(50));
+// console.log(array.indexOf(100));
+
