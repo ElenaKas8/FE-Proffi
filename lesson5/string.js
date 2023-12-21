@@ -78,6 +78,6 @@ let card = '4321 4567 8833 0000'
 // clearData('4321 4567 8833 0000') => '**** 4567 88** ****'
 // clearData('4321 1234 3333 0000') => '**** 1234 33** ****'
 function clearData(str) {
-    console.log(str.slice(0, 4) + ' ' + str.slice(4, 8) + ' ' + str.slice(8, 12) + ' ' + str.slice(12, 16));
+    console.log(`**** ${str.slice(5, 12)}** ****` );
 }
 clearData(card);
