@@ -113,17 +113,39 @@
 
 //----сортировка числовых значений
 // let array = [11,22,13,4,5,66,7,8,9]
+
 // array.sort()
 // console.log(array);
-//----устанавливаем правила сортировки
-let array = [11,22,13,4,5,66,7,8,9]
-array.sort((nxElem,crElem) => {
-    if (nxElem > crElem) {
-        return 1
-    } else if (nxElem < crElem) {
-        return -1
-    } else {
-        return 0
-    }
-})
-console.log(array);
+//----устанавливаем правила сортировки-------------------------
+// let array = [11,22,13,4,5,66,7,8,9]
+// array.sort((nxElem,crElem) => {
+//     if (nxElem > crElem) {
+//         return 1
+//     } else if (nxElem < crElem) {
+//         return -1
+//     } else {
+//         return 0
+//     }
+// })
+// console.log(array);
+
+//УПРОЩАЕМ ЭТОТ КОД  
+// array.sort ((nxElem,crElem) => nxElem - crElem)-по возрастанию
+
+// array.sort ((crElem,nxElem) => crElem- nxElem ) -по убыванию
+
+//--Task sort
+
+
+ let users = [
+    {id: 4, age: 30, name: 'Alex'},
+    {id: 5, age: 20, name: 'Steven'},
+    {id: 2, age: 40, name: 'Neena'},
+    {id: 1, age: 50, name: 'John'},
+    {id: 3, age: 30, name: 'Grend'}
+]
+
+// Задача: отсортировать массив по id
+users.sort((a, b) => a.id - b.id);
+console.log(users);
+
