@@ -1,0 +1,69 @@
+.container{
+    display: flex;
+    
+    }
+
+.box{
+    width:160px;
+    height:160px;
+    margin: 10px;
+}
+
+/* .box1{
+    background-color: rgb(238, 195, 195);
+    flex-grow: 1;
+   flex-shrink: 1;
+   flex-basis: auto; 
+}
+.box2{
+    background-color: rgb(111, 111, 230);
+      flex-grow: 1;
+   flex-shrink: 1;
+   flex-basis: auto;
+}
+.box3{
+    background-color: green;
+    flex-grow: 1;
+   flex-shrink: 1;
+   flex-basis: auto;
+}
+
+
+.box4{
+    background-color: yellow;
+    order: 4;
+}
+
+.box5{
+    background-color: rgb(52, 52, 102);
+   flex-basis: auto;
+}
+.box6{
+    background-color: rgb(12, 220, 12);
+    order: 2;}
+.box7{
+    background-color: rgb(210, 210, 173);
+    order: 4;
+} */
+
+/* А - не сжимается вообще
+В и С сжимаются 1:2
+А и В расширяются 3:1
+С не расширяется вообще */
+
+.box1{
+    background-color: #d08484;
+      flex-grow: 1;
+
+}
+.box2{
+    background-color: #4f4577;
+      flex-grow: 2;
+      flex-shrink: 1;
+
+}
+.box3{
+    background-color: #ded43f;
+      flex-grow: 0;
+      flex-shrink: 2;
+}
