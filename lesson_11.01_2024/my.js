@@ -46,8 +46,53 @@
 // map()-метод перезаписывает значение элементов масива
 
 //метод возвращает новый массив
+//не найденнный возвращает Boolean
 
-let array = [11,22,13,4,5,66,7,8,9]
-  let result = array.map(elem => elem ** 2)
+// let array = [11,22,13,4,5,66,7,8,9]
+//   let result = array.map(elem => elem ** 2)
+//   let result = array.map(elem => elem * 2)
 
- console.log(result)
+//  console.log(result)
+//  let array = ["Alex", "Steven", "Neena", "John", "Grend"]
+//  let result = array.map( elem => elem[0])
+//  console.log(result)
+
+// Task 
+
+// let prices = [100,450,600,200,1000,4000]
+
+// В магизине объявлена распродажа. Стоимость всех продуктов теперь указано с 15% скидкой
+// Сформируйте новый массив, который будет хранить новую стоимость с учетом указанной скидки
+
+//  let result = prices.map(elem => elem * 0.85)
+// console.log(result);
+
+// Task 6
+//  let fruits = ["яблоко", "вишня", "арбуз", "мандарин", "тыква"]
+
+// Выведите булевые типы которые ответят на вопросы: 
+// 1) Есть ли в массиве хотябы 1 элемент, который начинается на 'в'
+// 2) Все ли элементы массива содержат букву 'а'?
+
+
+// console.log(fruits.some(elem => elem.startsWith('в')));
+// console.log(fruits.every(elem => elem.includes('а')));
+
+
+//Task
+
+// let names = [
+//     {first_name: 'Steven', last_name: 'King'},
+//     {first_name: 'Alex', last_name: 'Willyam'},
+//     {first_name: 'John', last_name: 'Grec'},
+//     {first_name: 'Neena', last_name: 'Palman'},
+// ]
+
+// Сформируйте новый массив, который будет хранить строкове значение по указанному формату:
+// ['S.K', 'A.W', 'J.G', 'N.P']
+
+//  let result = names.map(elem => elem.first_name[0] + ',' + elem.last_name[0])
+//  console.log(result);
+
+//METOD ---ForEach()-метод перебирает элементы массива и НИЧЕГО! не возвращает
+
