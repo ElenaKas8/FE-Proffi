@@ -13,3 +13,11 @@
 // let result = users.filter(user => user.age >= 30 && user.age <= 40)
 // console.log(result)
 
+//  find()-метод позволяет найти элемент массива по условию
+
+//метод возвращает найденный элемент массива
+//если метод не найдет по условию элемент ,он вернет undefined
+//ищет слева направо и возвращает первое правильное значение
+let array = [11,22,13,4,5,66,7,8,9]
+let result = array.find(elem => elem > 15)
+console.log(result);
