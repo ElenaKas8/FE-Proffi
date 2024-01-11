@@ -1,5 +1,5 @@
 
-* {
+/* * {
     padding: 10px;
     text-align: center;
     margin: 14px;
@@ -7,30 +7,98 @@
   }
   
   .header {
+    flex-basis: 100%;
     background-color: red;
     padding: 24px;
+    order: 1;
   }
   
   .main {
+    flex-basis: 40%;
     background-color: rgb(20, 118, 151);
+    order: 3;
+    
   }
   
   .aside1 {
     background-color: yellow;
     flex-grow: 1;
-   
+    order: 2;
   }
   
   .aside2 {
     background-color: pink;
-    flex-grow: 1;
+    flex-grow:1;
+    order: 4;
+    
   }
   
   .footer {
     background-color: lightgreen;
+    order: 5;
   }
   .wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center
+  } */
+
+  * {
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  
+  .container {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .header {
+    background-color: red;
+    padding: 24px;
+    flex-basis: 100%;
+    order: 1;
+  }
+  
+  .main {
+    background-color: rgb(20, 118, 151);
+    order: 3;
+    flex-basis: 40%;
+    flex-grow: 1;
+  }
+  
+  .aside1 {
+    background-color: yellow;
+    flex-basis: 20%;
+    order: 2;
+    flex-grow: 1;
+  }
+  
+  .aside2 {
+    background-color: pink;
+    flex-grow: 1;
+    order: 4;
+    flex-basis: 20%;
+  }
+  
+  .footer {
+    background-color: lightgreen;
+    flex-basis: 100%;
+    order: 5;
+  }
+  @media(min-width: 800px) {
+    .container {
+     display:flex;
+    }
+    
+  }
+  @media(max-width: 600px) {
+    .container {
+     flex-wrap: wrap;
+     flex-direction: column;
+    }
   }
