@@ -34,9 +34,20 @@
 // some()-проверяет наличие ХОТЯ БЫ ОДНОГО ЭЛЕМЕНТЫ по условию и возвращает булевое значение, если находит элемента в массиве
 // every -проверяет все ли элементы в массиве удовлетворяют условию и возвращает булевое значение
 // возвращают boolean
-let array = [11,22,13,4,5,66,7,8,9]
-let someResult = array.some(elem => elem >15)
-let everyResult = array.every(elem => elem >15)
-console.log(someResult)
-console.log(everyResult)
+// let array = [11,22,13,4,5,66,7,8,9]
+// let someResult = array.some(elem => elem >15)
+//-----------------------------
+// let everyResult = array.every(elem => elem >15)
+// console.log(someResult)
+// console.log(everyResult)
 
+
+//-------------------
+// map()-метод перезаписывает значение элементов масива
+
+//метод возвращает новый массив
+
+let array = [11,22,13,4,5,66,7,8,9]
+  let result = array.map(elem => elem ** 2)
+
+ console.log(result)
