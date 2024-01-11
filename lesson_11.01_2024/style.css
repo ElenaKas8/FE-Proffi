@@ -1,0 +1,36 @@
+
+* {
+    padding: 10px;
+    text-align: center;
+    margin: 14px;
+    border-radius: 10px;
+  }
+  
+  .header {
+    background-color: red;
+    padding: 24px;
+  }
+  
+  .main {
+    background-color: rgb(20, 118, 151);
+  }
+  
+  .aside1 {
+    background-color: yellow;
+    flex-grow: 1;
+   
+  }
+  
+  .aside2 {
+    background-color: pink;
+    flex-grow: 1;
+  }
+  
+  .footer {
+    background-color: lightgreen;
+  }
+  .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+  }
