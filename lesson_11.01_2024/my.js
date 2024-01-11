@@ -137,15 +137,27 @@
 //--Task sort
 
 
- let users = [
-    {id: 4, age: 30, name: 'Alex'},
-    {id: 5, age: 20, name: 'Steven'},
-    {id: 2, age: 40, name: 'Neena'},
-    {id: 1, age: 50, name: 'John'},
-    {id: 3, age: 30, name: 'Grend'}
-]
+//  let users = [
+//     {id: 4, age: 30, name: 'Alex'},
+//     {id: 5, age: 20, name: 'Steven'},
+//     {id: 2, age: 40, name: 'Neena'},
+//     {id: 1, age: 50, name: 'John'},
+//     {id: 3, age: 30, name: 'Grend'}
+// ]
 
-// Задача: отсортировать массив по id
-users.sort((a, b) => a.id - b.id);
-console.log(users);
+// // Задача: отсортировать массив по id
+// users.sort((a, b) => a.id - b.id);
+// console.log(users);
+
+//Task
+let fruits = ["Яблоко", "Вишня", "Арбуз", "Мандарин", "Тыква"]
+// Найдите индекс элемента массива, длина которого будет равна 6
+// for (let i = 0; i < fruits.length; i++) {
+//     if (fruits[i].length === 6) {
+//         console.log(` ${i}`);
+//         break; 
+//     }
+// }
+console.log(fruits.findIndex(Elements => Elements.length === 6));
+
 
