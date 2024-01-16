@@ -61,13 +61,23 @@
 // console.log('max',Math.max(...array));
 
 //rest operator - деструктуризация,когда обявляем переменные одной строчкой кода
+//также занимается сборкой нового массива.Это способ обьявления одной строчкой кода
 
-let array = [10,20,30,40,]
-//или let [a,b,c,d] = [10,20,30,40]
-// let a array [1]
-// let b array [2] 
-// let c array [3]
-// let d array [4]
 
-let [a,b,] = array
-console.log(a,b);
+// let array = [10,20,30,40,]
+// //или let [a,b,c,d] = [10,20,30,40]
+// // let a array [1]10
+// // let b array [2]20
+// // let c array [3]30
+// // let d array [4]40
+
+
+// let [a,b,] = array
+// console.log(a,b);
+
+//Rest + деструктуризация--должен быть вконце, но мы можем использовать reverse()
+// let array = [10,20,30,40,50,60,70]
+// let [a,b, ...rest] = array.reverse()
+// console.log(a,b,rest);
+
+
