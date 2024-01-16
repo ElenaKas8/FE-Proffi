@@ -55,6 +55,10 @@
 // console.log(middleAge);
 
 // spread оператор - распаковка массива в указанном месте.
+//https://learn.javascript.ru/rest-parameters-spread-operator
+//https://learn.javascript.ru/destructuring-assignment
+
+
 //  let array = [1,2,3,4,5]
 // // console.log(...array)
 // //---------------------------------Math.max
@@ -80,4 +84,24 @@
 // let [a,b, ...rest] = array.reverse()
 // console.log(a,b,rest);
 
+//----------------------------Rest внутри функции-превращает в массив
+// function handle(...args) {
+//     console.log(args);
+// }
+// handle(1,2,3,4,5,6,7,8,9,10)
 
+// Task 1
+ //Напишите функцию getSum(), которая будет получать n - аргументов и выводить их сумму
+//  getSum(1,2) => 3
+//  getSum(1,2,3) => 6
+ function getSum(...args) {
+    return args.reduce((accum, elem) => accum + elem, 0);
+ }
+
+ console.log(getSum(1,2,3,4,5,6,7,8,9,10))
+
+
+
+ //------пример распаковки обьекта
+
+ 
