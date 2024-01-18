@@ -107,3 +107,33 @@
       grid-column: 1/-1;
     }
   }
+
+  @media (min-width: 600px) {
+    .container {
+      display: grid;
+      grid-template-areas: "header header" "main main" "aside1 aside2" "footer footer";
+    }
+  
+    .header {
+      grid-area: header;
+    }
+    .main {
+      grid-area: main;
+    }
+    .aside1 {
+      grid-area: aside1;
+    }
+    .aside2 {
+      grid-area: aside2;
+    }
+    .footer {
+      grid-area: footer;
+    }
+  }
+  
+  @media (min-width: 800px) {
+    .container {
+      display: grid;
+      grid-template-areas: "header header header header" "aside1 main main aside2 " "footer footer footer footer";
+    }
+  }
