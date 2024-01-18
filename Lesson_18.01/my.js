@@ -52,14 +52,52 @@
 // Если да - функция должна вернуть true, в противном случае false
 // примечание високосный год - это год который делится на 4 без остатка и кратны 400 и 100
 
-function checkYear(date) {
-    let year = date.getFullYear();
-    if (year % 4 === 0 && year % 100 !== 0 || year % 400 === 0) {
-        return true;
-    } else {
-        return false;
-    }
-}
-console.log(checkYear(new Date(2024,0,1)));
+// function checkYear(date) {
+//     let year = date.getFullYear();
+//     if (year % 4 === 0 && year % 100 !== 0 || year % 400 === 0) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(checkYear(new Date(2024,0,1)));
 
 
+// let Date = new Date("2024-01-20 11:30:00");
+
+// let dateString = date.toLocaleString("de-DE",){
+//     year:"2-digit",
+//     month: "long",
+//     day: "2-digit",
+
+//     hour: "2-digit",
+//     minute: "2-digit",
+//     second: "2-digit",
+
+//     }
+
+//---Object
+
+// let obj1 = {
+//     names:{
+//         name: "John",
+//         last: "Alex",
+//     }
+// }
+
+// let obj2 = JSON.parse(JSON.stringify(obj1));
+
+
+// Посчитайте сумму всех значений сво-йсв
+// let numbers = {
+//     num1: 50,
+//     num2: 150,
+//     num3: 20,
+//     num4: 45,
+//     num5: 35,
+// }
+
+//  let result = Object.values(numbers);
+
+// result = result.reduce((acc, elem) => acc + elem, 0)
+// console.log(result);
