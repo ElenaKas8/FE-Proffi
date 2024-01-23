@@ -164,3 +164,7 @@ let minus =document.querySelector(".minus");
 plus.oneClick=()=>{
     counter ++
 }
+minus.oneClick()=>{
+    counter --
+}
+localStorage.setItem("counter",counter)
