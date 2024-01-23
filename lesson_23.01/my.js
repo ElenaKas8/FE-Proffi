@@ -132,22 +132,22 @@
 // Реализовать кнопку, которая будет выводить в консоль значение input элемента
 // При нажатии на кнопку значение поля ввода должно сохраняться в localStorage.
 
-let form_inp = document.querySelector('.form_inp');
-let submit_btn = document.querySelector('.submit_btn');
+// let form_inp = document.querySelector('.form_inp');
+// let submit_btn = document.querySelector('.submit_btn');
 
-submit_btn.onclick = ()=>{
-    localStorage.setItem("key",form_inp.value);
-    form_inp.value="";
-}
+// submit_btn.onclick = ()=>{
+//     localStorage.setItem("key",form_inp.value);
+//     form_inp.value="";
+// }
 
 // 3) К прошлому примеру добавить кнопку, которая считывает значение из localStorage и помещает в поле ввода.
 
-let read =document.querySelector("read");
-let read_btn = document.querySelector("read_btn");
+// let read =document.querySelector("read");
+// let read_btn = document.querySelector("read_btn");
 
-read_btn.onclick=()=>{
-    form_inp.value = localStorage.getItem("ke")
-}
+// read_btn.onclick=()=>{
+//     form_inp.value = localStorage.getItem("ke")
+// }
 
 // Counter + - создать
 // Task 3 (мини - дз)
@@ -160,11 +160,24 @@ read_btn.onclick=()=>{
 let counter=0;
 let plus =document.querySelector(".plus");
 let minus =document.querySelector(".minus");
+let counterDisplay = document.querySelector(".counter");
 
-plus.oneClick=()=>{
-    counter ++
+
+plus.onclick=()=>{
+    counter++;
+    updateCounterDisplay()
+   
+    }
+
+minus.onclick=()=>{
+    counter--;
+    updateCounterDisplay()
 }
-minus.oneClick()=>{
-    counter --
+
+function updateCounterDisplay() {
+    
+    counterDisplay.innerHTML=counter;
+    if (counter<0) {
+        counterDisplay.innerHTML=" ";
+    }
 }
-localStorage.setItem("counter",counter)
