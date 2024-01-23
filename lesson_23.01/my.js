@@ -148,3 +148,19 @@ let read_btn = document.querySelector("read_btn");
 read_btn.onclick=()=>{
     form_inp.value = localStorage.getItem("ke")
 }
+
+// Counter + - создать
+// Task 3 (мини - дз)
+// Повторить document
+// Создать каунтер. 
+// Страница с двумя кнопками “+” и “-” и при нажатии на какую-либо число должно 
+// меняться в соответствующую сторону. Значение counter не должно слетать 
+// при перезагрузке страницы.
+
+let counter=0;
+let plus =document.querySelector(".plus");
+let minus =document.querySelector(".minus");
+
+plus.oneClick=()=>{
+    counter ++
+}
