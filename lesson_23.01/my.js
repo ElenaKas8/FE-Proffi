@@ -7,11 +7,10 @@
 //         city: "Berlin",
 //         country: "USA"
 //     }
-// }   
+// }
 // let key = Object.keys(obj);
 
 // console.log(key);
-
 
 // Object.assign()-метод,который обэединяет 2,и более объекта в один объект,если мы продублировали свойство,то обьект перезапишит и свойство и будет актуальным последнее свойство
 //-метод возвращант ссылку на первый объект(в качестве аргумента) и его мутирует
@@ -41,16 +40,14 @@
 // let copyObj = Object.assign({},obj4);
 // console.log(obj === copyObj);
 
-
 //-это старый метод.Теперь используется spred оператор
 
 // let copyObj = {...obj4};
 
-
 // Task 2
 
-// Задан объект someObj с произвольными сво-ми. 
-// Напишите функцию getKeys(obj), которая в качестве аргумента получает 
+// Задан объект someObj с произвольными сво-ми.
+// Напишите функцию getKeys(obj), которая в качестве аргумента получает
 // объект и возвращает результат согласно примеру ниже:
 
 // Примечание: Использовать класс Object (и методы) нельзя.
@@ -63,7 +60,6 @@
 // key4: 'value4',
 // }
 
-
 // function getKeys(obj) {
 //     let result =[];
 //     for (let key in obj) {
@@ -74,14 +70,13 @@
 // console.log(getKeys(someObj));
 // Результат: ['key1','key2','key3','key4']
 
-
 // Task 3
-// Задан массив array, передающий произвольное количество элементов. 
+// Задан массив array, передающий произвольное количество элементов.
 // реализуйте функционал, который преобразует его в объект по следующему правилу:
 // Ключ элемента должен содержать его порядковый номер, в качестве значения взять строку ‘keyN’, где N - это порядковый номер.
 // Количество сво-тв должно быть равным количеству элементов массива
 
-// Пример: 
+// Пример:
 // let array = [1,true,'3','value1',9,'key'];
 // let result = {};
 // array.map((elem, index) => {
@@ -90,7 +85,7 @@
 // })
 // console.log(result);
 
-// Результат: 
+// Результат:
 // {
 //     key1: 1,
 //     key2: true,
@@ -100,10 +95,9 @@
 //     key6: ‘key’
 // }
 
-
 //Задачи по LocalStorage
 
-//Сщздайте кнопку,которая будет переключать значение 
+//Сщздайте кнопку,которая будет переключать значение
 
 // let btn_init =document.querySelector(".btn_init");
 // btn_init.oneclick =()=>{
@@ -116,7 +110,7 @@
 // }
 
 //2 variant
-// btn_init.oneclick 
+// btn_init.oneclick
 
 //реализовать метод который позволяет вывести значение input в консоли
 
@@ -146,38 +140,39 @@
 // let read_btn = document.querySelector("read_btn");
 
 // read_btn.onclick=()=>{
-//     form_inp.value = localStorage.getItem("ke")
+//     form_inp.value = localStorage.getItem("key")
 // }
 
 // Counter + - создать
 // Task 3 (мини - дз)
 // Повторить document
-// Создать каунтер. 
-// Страница с двумя кнопками “+” и “-” и при нажатии на какую-либо число должно 
-// меняться в соответствующую сторону. Значение counter не должно слетать 
+// Создать каунтер.
+// Страница с двумя кнопками “+” и “-” и при нажатии на какую-либо число должно
+// меняться в соответствующую сторону. Значение counter не должно слетать
 // при перезагрузке страницы.
 
-let counter=0;
-let plus =document.querySelector(".plus");
-let minus =document.querySelector(".minus");
+let counter = parseInt(localStorage.getItem("counter")) || 0;
+let plus = document.querySelector(".plus");
+let minus = document.querySelector(".minus");
 let counterDisplay = document.querySelector(".counter");
 
+updateCounterDisplay();
 
-plus.onclick=()=>{
-    counter++;
-    updateCounterDisplay()
-   
-    }
+plus.onclick = () => {
+  counter++;
+  updateCounterDisplay();
+};
 
-minus.onclick=()=>{
-    counter--;
-    updateCounterDisplay()
-}
+minus.onclick = () => {
+  counter--;
+  updateCounterDisplay();
+};
 
 function updateCounterDisplay() {
-    
-    counterDisplay.innerHTML=counter;
-    if (counter<0) {
-        counterDisplay.innerHTML=" ";
-    }
+  counterDisplay.innerHTML = counter;
+  if (counter < 0) {
+    counterDisplay.innerHTML = " ";
+  }
+
+  localStorage.setItem("counter", counter.toString());
 }

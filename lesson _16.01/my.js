@@ -1,18 +1,17 @@
 //методы массивов
 
-// Метод Reduce()
-//метод который позволяет рассчитывать аналитические задачи*среднее число,сумма значение,)
-//метод возвращает итоговое значение аккумулятора
+//* Метод Reduce()
+//*метод который позволяет рассчитывать аналитические задачи*среднее число,сумма значение,)
+//*метод возвращает итоговое значение аккумулятора
 //  let array = [1,2,3,4,5]
 //посчитать сумму значений в массиве
-// поиск суммы без метода reduce
+//* поиск суммы без метода reduce
 // let sum=0;//сохраняется промежуточное значение
 // for  (let elem of array) {
 //      sum += elem
-  
+
 // }
 // console.log(sum)
-
 
 // let array = [1,2,3,4,5]
 // let sum = array.reduce((acc,elem) => acc + elem)
@@ -23,7 +22,7 @@
 
 // c методом reduce()
 // let array = [1,2,3,4,5]
-// let sum = array.reduce((accum, elem) => accum + elem / array.length, 0) 
+// let sum = array.reduce((accum, elem) => accum + elem / array.length, 0)
 
 // console.log(sum);
 
@@ -35,9 +34,8 @@
 //  let sum = numbers.reduce((accum, elem) => accum * elem, 1)
 //  let sum2 = numbers.reduce((accum, elem) => accum + elem, 0)
 //  console.log(sum,sum2);
- 
-//посчитать сумму всех возрастов массива
 
+//посчитать сумму всех возрастов массива
 
 //  let users = [
 //      {id: 4, age: 30, name: 'Alex'},
@@ -50,14 +48,13 @@
 // let sum = users.reduce((accum, elem) => accum + elem.age, 0)
 // console.log(sum)
 
-// // 2. Рассчитать средний возраст сотрудников
+// 2. Рассчитать средний возраст сотрудников
 // let middleAge = users.reduce((accum, elem) => accum + elem.age, 0) / users.length
 // console.log(middleAge);
 
-// spread оператор - распаковка массива в указанном месте.
+//* spread оператор - распаковка массива в указанном месте.
 //https://learn.javascript.ru/rest-parameters-spread-operator
 //https://learn.javascript.ru/destructuring-assignment
-
 
 //  let array = [1,2,3,4,5]
 // // console.log(...array)
@@ -67,14 +64,12 @@
 //rest operator - деструктуризация,когда обявляем переменные одной строчкой кода
 //также занимается сборкой нового массива.Это способ обьявления одной строчкой кода
 
-
 // let array = [10,20,30,40,]
 // //или let [a,b,c,d] = [10,20,30,40]
 // // let a array [1]10
 // // let b array [2]20
 // // let c array [3]30
 // // let d array [4]40
-
 
 // let [a,b,] = array
 // console.log(a,b);
@@ -91,17 +86,13 @@
 // handle(1,2,3,4,5,6,7,8,9,10)
 
 // Task 1
- //Напишите функцию getSum(), которая будет получать n - аргументов и выводить их сумму
+//Напишите функцию getSum(), которая будет получать n - аргументов и выводить их сумму
 //  getSum(1,2) => 3
 //  getSum(1,2,3) => 6
- function getSum(...args) {
-    return args.reduce((accum, elem) => accum + elem, 0);
- }
+function getSum(...args) {
+  return args.reduce((accum, elem) => accum + elem, 0);
+}
 
- console.log(getSum(1,2,3,4,5,6,7,8,9,10))
+console.log(getSum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
 
-
-
- //------пример распаковки обьекта
-
- 
+//------пример распаковки обьекта
